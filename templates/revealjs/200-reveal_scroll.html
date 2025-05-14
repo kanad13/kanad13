@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Kunal Pathak - My First Reveal Deck</title>
+	<meta name="description" content="Update description">
+	<meta name="author" content="Kunal Pathak">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./../../reveal.js/dist/reset.css">
+	<link rel="stylesheet" href="./../../reveal.js/dist/reveal.css">
+
+	<!-- Your Custom Theme -->
+	<link rel="stylesheet" href="./../../assets/css/revealjs-white.css" id="theme">
+
+	<!-- Google Fonts: Montserrat -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./../../reveal.js/plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+				<textarea data-template>
+# presentation title
+
+</br>
+
+## presentation subtitle
+
+</br>
+
+Author - <u><a href="https://www.kunal-pathak.com" target="_blank" rel="noopener noreferrer">Kunal Pathak</a></u>
+
+---
+
+# Numbered List
+
+1. Point 1
+2. Point 2
+3. Point 3
+
+Note:
+This comment is not visible.
+
+---
+
+## Bulleted List
+
+- **Main Bullet**
+    - Sub Bullet 1
+    - Sub Bullet 2
+        - Sub Sub Bullet 1
+        - Sub Sub Bullet 2
+            - Sub Sub Sub Bullet 1
+- **Main Bullet 2**
+    - Sub Bullet 1
+    - Sub Bullet 2
+        - Sub Sub Bullet 1
+        - Sub Sub Bullet 2
+            - Sub Sub Sub Bullet 1
+
+---
+
+# Simple Table
+
+| Header 1 | Header 2 | Header 3 |
+| -------- | -------- | -------- |
+| Row 1    | Row 2    | Row 3    |
+| Row 4    | Row 5    | Row 6    |
+| Row 7    | Row 8    | Row 9    |
+
+---
+
+# Hyperlink
+
+</br>
+
+<a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Click here to open google search engine.</a>
+
+Note:
+This is a note for the hyperlink slide.
+
+---
+
+# Images
+
+<img class="r-stretch" src="./../../assets/images/Maison_devant_la_Sainte-Victoire-Paul_Cezanne.jpg" />
+
+---
+
+## Thank You
+
+</br>
+
+<u><a href="https://www.kunal-pathak.com" target="_blank" rel="noopener noreferrer">Kunal Pathak</a></u>
+
+                </textarea>
+			</section>
+		</div>
+	</div>
+
+	<!-- Core Reveal.js JS from submodule -->
+	<script src="./../../reveal.js/dist/reveal.js"></script>
+
+	<!-- Reveal.js Plugins from submodule -->
+	<script src="./../../reveal.js/plugin/highlight/highlight.js"></script>
+	<script src="./../../reveal.js/plugin/markdown/markdown.js"></script>
+	<script src="./../../reveal.js/plugin/search/search.js"></script>
+	<script src="./../../reveal.js/plugin/notes/notes.js"></script>
+	<script src="./../../reveal.js/plugin/zoom/zoom.js"></script>
+	<!-- <script src="./../../reveal.js/plugin/menu/menu.js"></script> -- > <!-- Uncomment if you use RevealMenu -->
+
+
+	<script>
+		Reveal.initialize({
+			// Activate the scroll view
+			view: 'scroll', // This was a key feature you had
+
+			// Force the scrollbar to remain visible
+			scrollProgress: true,
+
+			// Display presentation control arrows
+			controls: true,
+
+			// Help the user learn the controls by providing hints, for example by
+			// bouncing the down arrow when they first encounter a vertical slide
+			controlsTutorial: true,
+
+			// Determines where controls appear, "edges" or "bottom-right"
+			controlsLayout: 'bottom-right',
+
+			// Visibility rule for backwards navigation arrows; "faded", "hidden"
+			// or "visible"
+			controlsBackArrows: 'visible',
+
+			// Display a presentation progress bar
+			progress: true,
+
+			// Display the page number of the current slide
+			slideNumber: "h/v",
+
+			// Can be used to limit the contexts in which the slide number appears
+			showSlideNumber: 'all',
+
+			// Use 1 based indexing for # links to match slide number (default is zero based)
+			hashOneBasedIndex: false, // Default is false, so explicitly setting it is fine.
+
+			// Add the current slide number to the URL hash
+			hash: true,
+
+			// Flags if we should monitor the hash and change slides accordingly
+			respondToHashChanges: true,
+
+			// Enable support for jump-to-slide navigation shortcuts
+			jumpToSlide: true,
+
+			// Push each slide change to the browser history.
+			history: true,
+
+			// Enable keyboard shortcuts for navigation
+			keyboard: true,
+			keyboardCondition: null,
+			disableLayout: false,
+			overview: true,
+			center: true,
+			touch: true,
+			loop: false,
+			rtl: false,
+			navigationMode: 'default',
+			shuffle: false,
+			fragments: true,
+			fragmentInURL: true,
+			embedded: false,
+			help: true,
+			pause: true,
+			showNotes: false, // Set to true if you want speaker notes visible to all by default
+			autoPlayMedia: null,
+			preloadIframes: null,
+			autoAnimate: true,
+			autoAnimateMatcher: null,
+			autoAnimateEasing: 'ease',
+			autoAnimateDuration: 1.0,
+			autoAnimateUnmatched: true,
+			autoAnimateStyles: [
+				'opacity', 'color', 'background-color', 'padding', 'font-size',
+				'line-height', 'letter-spacing', 'border-width', 'border-color',
+				'border-radius', 'outline', 'outline-offset'
+			],
+			autoSlide: 0,
+			autoSlideStoppable: true,
+			autoSlideMethod: null,
+			defaultTiming: null,
+			mouseWheel: true,
+			previewLinks: false,
+			postMessage: true,
+			postMessageEvents: false,
+			focusBodyOnPageVisibilityChange: true,
+			transition: 'slide',
+			transitionSpeed: 'default',
+			backgroundTransition: 'fade',
+			pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+			pdfSeparateFragments: true,
+			pdfPageHeightOffset: -1,
+			viewDistance: 10, // Adjusted from original very high number, 3-10 is typical
+			mobileViewDistance: 2, // Adjusted from original very high number, 2-3 is typical
+			display: 'block',
+			hideInactiveCursor: true,
+			hideCursorTime: 5000,
+
+			// Menu plugin configuration (if you decide to use it)
+			// menu: {
+			//  side: 'left',
+			//  width: 'normal',
+			//  numbers: true,
+			//  titleSelector: 'h1, h2, h3, h4, h5, h6',
+			//  useTextContentForMissingTitles: true,
+			//  hideMissingTitles: false,
+			//  markers: true,
+			//  custom: false,
+			//  themes: [ // Example: Link to your custom theme and built-ins
+			//      { name: 'My Custom White', theme: '../../../assets/css/revealjs-white.css' },
+			//      { name: 'Black', theme: '../../../reveal.js/dist/theme/black.css' },
+			//      { name: 'White', theme: '../../../reveal.js/dist/theme/white.css' }
+			//  ],
+			//  // themesPath: '../../../reveal.js/dist/theme/', // Not needed if themes array has full paths
+			//  transitions: ['None', 'Fade', 'Slide', 'Convex', 'Concave', 'Zoom'],
+			//  openButton: true,
+			//  openSlideNumber: true,
+			//  keyboard: false, // Set to true to enable menu keyboard nav
+			//  sticky: true,
+			//  autoOpen: true,
+			//  delayInit: false,
+			//  openOnInit: false,
+			//  loadIcons: true
+			// },
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealSearch, RevealNotes, RevealZoom] // Add RevealMenu if you uncomment and configure it
+		});
+	</script>
+</body>
+
+</html>

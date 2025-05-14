@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Remark.js Presentation Template</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!-- Google Fonts: Montserrat -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<!-- Custom Remark.js Theme -->
+	<link rel="stylesheet" type="text/css" href="./../../assets/css/remarkjs-github.css" />
+
+	<style>
+	</style>
+</head>
+
+<body>
+	<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+	<script>
+		var slideshow = remark.create({
+			sourceUrl: './101-remark.md',
+			ratio: '16:9',
+			navigation: {
+				scroll: true,
+				touch: true,
+				click: false
+			},
+			countIncrementalSlides: false,
+			highlightStyle: 'github',
+			highlightLanguage: 'remark',
+			highlightLines: true,
+			highlightSpans: true
+		});
+	</script>
+</body>
+
+</html>

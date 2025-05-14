@@ -1,0 +1,513 @@
+/*
+Optimized Theme for Remark.js
+Based on github-markdown-css, streamlined for presentations.
+Uses Montserrat font and assumes Highlight.js for syntax highlighting (theme to be linked separately or use Remark.js default).
+*/
+
+.github-theme {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	margin: 0;
+	color: #24292f;
+	background-color: #ffffff;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-size: 16px;
+	/* Base font size for slide content - can be overridden by remark-slide-content */
+	font-weight: 300;
+	line-height: 1.8;
+	word-wrap: break-word;
+}
+
+.github-theme [hidden] {
+	display: none !important;
+}
+
+.github-theme a {
+	background-color: transparent;
+	color: #0969da;
+	text-decoration: none;
+}
+
+.github-theme a:hover {
+	text-decoration: underline;
+}
+
+.github-theme abbr[title] {
+	border-bottom: none;
+	text-decoration: underline dotted;
+}
+
+.github-theme b,
+.github-theme strong {
+	font-weight: 600;
+}
+
+.github-theme dfn {
+	font-style: italic;
+}
+
+.github-theme h1,
+.github-theme h2,
+.github-theme h3,
+.github-theme h4,
+.github-theme h5,
+.github-theme h6 {
+	margin-top: 24px;
+	margin-bottom: 16px;
+	line-height: 1.25;
+}
+
+.github-theme h1 {
+	font-weight: 200;
+	padding-bottom: 0.3em;
+	text-transform: uppercase;
+	font-size: 3em;
+	border-bottom: 1px solid hsla(210, 18%, 87%, 1);
+	text-align: center;
+	color: #000;
+}
+
+.github-theme h2 {
+	font-weight: 300;
+	padding-bottom: 0.3em;
+	font-size: 2em;
+	color: #f72585;
+	/* Pink */
+}
+
+.github-theme h3 {
+	font-weight: 400;
+	font-size: 1.75em;
+	color: #6a994e;
+	/* Green */
+}
+
+.github-theme h4 {
+	font-weight: 500;
+	font-size: 1.5em;
+}
+
+.github-theme h5 {
+	font-weight: 600;
+	font-size: 1.25em;
+}
+
+.github-theme h6 {
+	font-weight: 700;
+	font-size: 1em;
+	color: #57606a;
+}
+
+.github-theme mark {
+	background-color: #fff8c5;
+	color: #24292f;
+}
+
+.github-theme small {
+	font-size: 90%;
+}
+
+.github-theme sub,
+.github-theme sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+.github-theme sub {
+	bottom: -0.25em;
+}
+
+.github-theme sup {
+	top: -0.5em;
+}
+
+.github-theme img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	max-height: 70vh;
+	/* Prevent images from being too tall on a slide */
+	border-style: none;
+	box-sizing: content-box;
+	background-color: #ffffff;
+	/* Ensure transparent PNGs don't show slide background if image bg is desired white */
+}
+
+.github-theme figure {
+	display: block;
+	/* Ensures figure behaves as a block */
+	margin: 1em auto;
+	/* Centering figure */
+}
+
+.github-theme figcaption {
+	display: block;
+	/* Ensures figcaption is block */
+	text-align: center;
+	/* Center figcaption text */
+	font-size: 0.9em;
+	color: #57606a;
+	margin-top: 0.5em;
+}
+
+
+.github-theme hr {
+	box-sizing: content-box;
+	overflow: hidden;
+	background: transparent;
+	border-bottom: 1px solid hsla(210, 18%, 87%, 1);
+	height: 0.25em;
+	padding: 0;
+	margin: 24px 0;
+	background-color: #d0d7de;
+	border: 0;
+}
+
+.github-theme hr::before,
+.github-theme hr::after {
+	display: table;
+	content: "";
+}
+
+.github-theme hr::after {
+	clear: both;
+}
+
+.github-theme table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	display: block;
+	/* Or table, depending on desired layout within slides */
+	width: max-content;
+	/* Allows table to be naturally sized */
+	margin-left: auto;
+	/* For centering if display:block and width is < 100% */
+	margin-right: auto;
+	/* For centering */
+	max-width: 100%;
+	overflow: auto;
+	/* Scroll for overly wide tables */
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.github-theme td,
+.github-theme th {
+	padding: 6px 13px;
+	border: 1px solid #d0d7de;
+}
+
+.github-theme table tr {
+	background-color: #ffffff;
+	border-top: 1px solid hsla(210, 18%, 87%, 1);
+}
+
+.github-theme table tr:nth-child(2n) {
+	background-color: #f6f8fa;
+}
+
+.github-theme table img {
+	background-color: transparent;
+	/* Images within tables */
+}
+
+.github-theme kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	line-height: 10px;
+	color: #24292f;
+	vertical-align: middle;
+	background-color: #f6f8fa;
+	border: solid 1px rgba(175, 184, 193, 0.2);
+	border-bottom-color: rgba(175, 184, 193, 0.2);
+	border-radius: 6px;
+	box-shadow: inset 0 -1px 0 rgba(175, 184, 193, 0.2);
+}
+
+.github-theme p {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.github-theme blockquote {
+	margin: 0 0 16px 0;
+	padding: 0 1em;
+	color: #57606a;
+	border-left: 0.25em solid #d0d7de;
+}
+
+.github-theme ul,
+.github-theme ol {
+	margin-top: 0;
+	margin-bottom: 16px;
+	padding-left: 2em;
+}
+
+.github-theme ol ol,
+.github-theme ul ol {
+	list-style-type: lower-roman;
+}
+
+.github-theme ul ul ol,
+.github-theme ul ol ol,
+.github-theme ol ul ol,
+.github-theme ol ol ol {
+	list-style-type: lower-alpha;
+}
+
+.github-theme dd {
+	margin-left: 0;
+	margin-bottom: 16px;
+}
+
+.github-theme dt {
+	font-weight: 600;
+	margin-top: 16px;
+}
+
+/* Code blocks and inline code basic structure */
+/* Colors for syntax highlighting should come from a Highlight.js theme */
+.github-theme code,
+.github-theme tt,
+/* tt is obsolete, but often used as alias for code */
+.github-theme samp {
+	/* samp is for sample output, style similarly to code */
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 0.9em;
+	padding: 0.2em 0.4em;
+	margin: 0;
+	background-color: rgba(175, 184, 193, 0.2);
+	/* Light background for inline code */
+	border-radius: 6px;
+	white-space: break-spaces;
+	/* Allow inline code to wrap */
+}
+
+.github-theme del code {
+	/* Code inside <del> tags */
+	text-decoration: inherit;
+}
+
+.github-theme pre {
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 0.9em;
+	word-wrap: normal;
+	/* Don't wrap lines in code blocks by default */
+	margin-top: 0;
+	margin-bottom: 16px;
+	padding: 16px;
+	overflow: auto;
+	/* Allow scrolling for long lines/blocks */
+	line-height: 1.45;
+	background-color: #f6f8fa;
+	/* Background for the code block itself */
+	border-radius: 6px;
+}
+
+.github-theme pre code,
+.github-theme pre tt {
+	display: inline;
+	/* Highlight.js often wraps lines in <span> or uses <br> */
+	max-width: auto;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+	line-height: inherit;
+	word-wrap: normal;
+	background-color: transparent;
+	/* Code inside pre should not have its own bg */
+	border: 0;
+	font-size: 100%;
+	/* Inherit pre's font size */
+	white-space: pre;
+	/* Preserve whitespace */
+}
+
+.github-theme::before,
+.github-theme::after {
+	display: table;
+	content: "";
+}
+
+.github-theme::after {
+	clear: both;
+}
+
+.github-theme>*:first-child {
+	margin-top: 0 !important;
+}
+
+.github-theme>*:last-child {
+	margin-bottom: 0 !important;
+}
+
+.github-theme a:not([href]) {
+	color: inherit;
+	text-decoration: none;
+}
+
+.github-theme blockquote> :first-child {
+	margin-top: 0;
+}
+
+.github-theme blockquote> :last-child {
+	margin-bottom: 0;
+}
+
+.github-theme h1 tt,
+.github-theme h1 code,
+.github-theme h2 tt,
+.github-theme h2 code,
+.github-theme h3 tt,
+.github-theme h3 code,
+.github-theme h4 tt,
+.github-theme h4 code,
+.github-theme h5 tt,
+.github-theme h5 code,
+.github-theme h6 tt,
+.github-theme h6 code {
+	padding: 0 0.2em;
+	font-size: inherit;
+	/* Code inside headings should inherit heading's font size */
+	background-color: rgba(175, 184, 193, 0.1);
+	/* Lighter bg for code in headings */
+}
+
+.github-theme ul.no-list,
+.github-theme ol.no-list {
+	padding: 0;
+	list-style-type: none;
+}
+
+.github-theme ol[type="a"] {
+	list-style-type: lower-alpha;
+}
+
+.github-theme ol[type="A"] {
+	list-style-type: upper-alpha;
+}
+
+.github-theme ol[type="i"] {
+	list-style-type: lower-roman;
+}
+
+.github-theme ol[type="I"] {
+	list-style-type: upper-roman;
+}
+
+.github-theme ol[type="1"] {
+	list-style-type: decimal;
+}
+
+.github-theme ul ul,
+.github-theme ul ol,
+.github-theme ol ol,
+.github-theme ol ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.github-theme li>p {
+	margin-top: 16px;
+}
+
+.github-theme li+li {
+	margin-top: 0.25em;
+}
+
+.github-theme dl {
+	padding: 0;
+}
+
+.github-theme dl dt {
+	padding: 0;
+	margin-top: 16px;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: 600;
+}
+
+.github-theme dl dd {
+	padding: 0 16px;
+	margin-bottom: 16px;
+}
+
+.github-theme table th {
+	font-weight: 600;
+}
+
+.github-theme img[align="right"] {
+	padding-left: 20px;
+}
+
+.github-theme img[align="left"] {
+	padding-right: 20px;
+}
+
+.github-theme .emoji {
+	/* For images used as emoji */
+	max-width: none;
+	vertical-align: text-top;
+	background-color: transparent;
+}
+
+/* Print styles for Remark.js */
+@page {
+	size: 1210px 681px;
+	/* Or your preferred slide aspect ratio for PDF output */
+	margin: 0;
+}
+
+@media print {
+	.remark-slide-scaler {
+		width: 100% !important;
+		height: 100% !important;
+		transform: scale(1) !important;
+		top: 0 !important;
+		left: 0 !important;
+	}
+
+	body.remark-container {
+		/* More specific selector for remark body */
+		background-color: #fff !important;
+		/* Ensure background is white for printing */
+	}
+
+	.github-theme {
+		/* Apply to your theme specifically for printing */
+		background-color: #fff !important;
+		-webkit-print-color-adjust: exact;
+		/* try to force background colors and images */
+		print-color-adjust: exact;
+	}
+
+	/* Ensure text is black on white for print, if needed */
+	.github-theme,
+	.github-theme p,
+	.github-theme li,
+	.github-theme h1,
+	.github-theme h2,
+	.github-theme h3
+
+	/* etc. */
+		{
+		color: #000 !important;
+		/* Override theme colors for print if they are light */
+	}
+
+	.github-theme h1 {
+		border-bottom-color: #ccc !important;
+	}
+
+	/* Lighter border for print */
+	.github-theme code,
+	.github-theme pre {
+		background-color: #f0f0f0 !important;
+		/* Light grey for code blocks on print */
+	}
+}
